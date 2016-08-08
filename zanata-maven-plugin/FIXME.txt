@@ -1,0 +1,7 @@
+FIXME: ensure all mojos inherit params from ConfigurableMojo
+
+to test:
+
+mvn org.zanata:zanata-maven-plugin:4.0.0-SNAPSHOT:help -Ddetail -Dgoal=list-remote | grep userConfig
+
+mvn org.zanata:zanata-maven-plugin:4.0.0-SNAPSHOT:help -Ddetail | egrep '^zanata:|userConfig'
