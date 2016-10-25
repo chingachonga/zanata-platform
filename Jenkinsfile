@@ -6,5 +6,6 @@ node ('master') {
   def ppid = sh returnStdout: true, script: 'ps -o ppid= $$'
 
   println "check the process tree for sleep"
+  sh "sleep 60"
   sh "sleep 1h"
 }
